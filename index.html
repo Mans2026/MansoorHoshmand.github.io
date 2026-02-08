@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mansoor Hoshmand | Cybersecurity Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Quick inline style for header flex layout */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      text-align: left;
+    }
+    header img {
+      max-width: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+    }
+    header div {
+      max-width: 600px;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header div {
+        max-width: 100%;
+      }
+      header img {
+        max-width: 100px;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-  <h1>Mansoor Hoshmand</h1>
-  <p>Cybersecurity Diploma – Nova Scotia Community College</p>
+  <img src="assets/projects/photo.jpg" alt="Photo of Mansoor Hoshmand" />
+  <div>
+    <h1>Mansoor Hoshmand</h1>
+    <p>Cybersecurity Diploma – Nova Scotia Community College</p>
+  </div>
 </header>
 
 <section>
@@ -29,9 +65,7 @@
 
 <section>
   <h2>How This Portfolio Is Organized</h2>
-  <p>
-    This portfolio is structured to allow reviewers to quickly understand my skills, tools, and hands-on experience:
-  </p>
+  <p>This portfolio is structured to allow reviewers to quickly understand my skills, tools, and hands-on experience:</p>
   <ul>
     <li>Core Cybersecurity Skills</li>
     <li>Featured Cybersecurity Projects</li>
@@ -64,7 +98,12 @@
     <p>
       Analyzed a malicious Windows Portable Executable (PE) using static and dynamic techniques to identify evasion methods, persistence mechanisms, and covert remote access behavior. Simulated a real-world fileless attack using PowerShell to establish an in-memory reverse shell, demonstrating modern attacker tradecraft and post-exploitation persistence.
     </p>
-    <a href="#" target="_blank">📄 Post-Incident Malware Analysis & Fileless Attack Simulation.pdf</a>
+    <a
+      href="assets/projects/Post-Incident Malware Analysis and Fileless Attack Simulation.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      >📄 Post-Incident Malware Analysis & Fileless Attack Simulation.pdf</a
+    >
   </div>
 
   <div class="project">
@@ -72,7 +111,12 @@
     <p>
       Developed and executed a controlled malware simulation implementing a full modern ransomware attack chain in a lab environment. The malware disguised itself as a legitimate OBS Studio installer, performed privilege escalation, payload deployment, persistence mechanisms, and created a hidden administrative backdoor. The project concluded with automated ransom note delivery and self-deletion of the dropper to reduce forensic artifacts, demonstrating practical understanding of malware behavior, persistence, and evasion techniques.
     </p>
-    <a href="#" target="_blank">📄 Multi-Stage Ransomware Attack Chain Simulation.pdf</a>
+    <a
+      href="assets/projects/Multi-Stage Ransomware Attack Chain Simulation.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      >📄 Multi-Stage Ransomware Attack Chain Simulation.pdf</a
+    >
   </div>
 
   <div class="project">
@@ -80,7 +124,12 @@
     <p>
       Conducted a hands-on penetration test against the Damn Vulnerable Web Application (DVWA), exploiting vulnerabilities such as command injection, insecure file uploads, SQL injection, and cross-site scripting (XSS). Demonstrated real-world impact through reverse shells, credential extraction, and session cookie exfiltration, highlighting practical offensive security skills and secure coding awareness.
     </p>
-    <a href="#" target="_blank">📄 Web Application Penetration Testing – DVWA.pdf</a>
+    <a
+      href="assets/projects/Web Application Penetration Testing – DVWA.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      >📄 Web Application Penetration Testing – DVWA.pdf</a
+    >
   </div>
 
   <div class="project">
@@ -88,9 +137,13 @@
     <p>
       Performed a comprehensive security assessment of enterprise workstations using both uncredentialed and credentialed vulnerability scans. Identified and analyzed critical and medium-risk exposures, providing actionable recommendations to harden configurations and reduce overall organizational risk.
     </p>
-    <a href="#" target="_blank">📄 Enterprise Security Risk Assessment.pdf</a>
+    <a
+      href="assets/projects/Enterprise Security Risk Assessment.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      >📄 Enterprise Security Risk Assessment.pdf</a
+    >
   </div>
-
 </section>
 
 <section>
@@ -133,9 +186,20 @@
 <section>
   <h2>Contact & Professional Links</h2>
   <ul>
-    <li><strong>GitHub:</strong> <a href="https://github.com/Mans2026" target="_blank">github.com/Mans2026</a></li>
-    <li><strong>Email:</strong> <a href="mailto:mansoorhoshmand12@gmail.com">mansoorhoshmand12@gmail.com</a></li>
-    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mansoor-hoshmand-a56b6822a" target="_blank">linkedin.com/in/mansoor-hoshmand-a56b6822a</a></li>
+    <li>
+      <strong>GitHub:</strong>
+      <a href="https://github.com/Mans2026" target="_blank" rel="noopener noreferrer">github.com/Mans2026</a>
+    </li>
+    <li>
+      <strong>Email:</strong>
+      <a href="mailto:mansoorhoshmand12@gmail.com">mansoorhoshmand12@gmail.com</a>
+    </li>
+    <li>
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/mansoor-hoshmand-a56b6822a" target="_blank" rel="noopener noreferrer"
+        >linkedin.com/in/mansoor-hoshmand-a56b6822a</a
+      >
+    </li>
   </ul>
 </section>
 
@@ -145,4 +209,3 @@
 
 </body>
 </html>
-
