@@ -1,21 +1,20 @@
-/* ===== Global Styles ===== */
+/* Global Styles */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   max-width: 1200px;
   margin: auto;
   padding: 30px;
-  background: radial-gradient(circle at top, #020617, #020617 40%, #020617);
   color: #e5e7eb;
   line-height: 1.7;
   position: relative;
-  background: url('path-to-your-image.jpg') center/cover no-repeat, 
+  background: url('path-to-your-image.jpg') center/cover no-repeat,
               radial-gradient(circle at top, rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.8) 40%, rgba(2, 6, 23, 0.8));
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
 }
 
-/* ===== Background Overlay (Darkens image for readability) ===== */
+/* Background Overlay (Darkens the image for readability) */
 body::before {
   content: "";
   position: absolute;
@@ -24,49 +23,44 @@ body::before {
   width: 100%;
   height: 100%;
   background: url('path-to-your-image.jpg') center/cover no-repeat;
-  filter: brightness(0.4);  /* Darkens the image */
+  filter: brightness(0.4); /* Darken the image */
   z-index: -1;
   background-size: cover;
 }
 
-/* ===== Header ===== */
+/* Header Styling */
 header {
   text-align: center;
   margin-bottom: 60px;
   padding: 40px 20px;
-  background: linear-gradient(145deg, rgba(0, 128, 0, 0.08), rgba(0, 102, 0, 0.03)); /* Dark green gradient */
+  background: linear-gradient(145deg, rgba(56, 189, 248, 0.08), rgba(34, 211, 238, 0.03));
   border-radius: 16px;
-  box-shadow: 0 0 40px rgba(0, 128, 0, 0.15);
-  animation: pulseGlowGreen 4s infinite;
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.15);
+  animation: pulseGlow 4s infinite;
 }
 
-/* ===== Glowing Neon Animation for Header (Green Glow) ===== */
-@keyframes pulseGlowGreen {
-  0% { box-shadow: 0 0 15px rgba(0, 128, 0, 0.3); }
-  50% { box-shadow: 0 0 30px rgba(0, 128, 0, 0.6); }
-  100% { box-shadow: 0 0 15px rgba(0, 128, 0, 0.3); }
+/* Glowing Neon Animation for Header */
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 15px rgba(56, 189, 248, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(56, 189, 248, 0.6); }
+  100% { box-shadow: 0 0 15px rgba(56, 189, 248, 0.3); }
 }
 
-header:hover {
-  transform: scale(1.05); /* Slight scaling on hover */
-}
-
-/* ===== Headings ===== */
+/* Headings */
 h1 {
   font-size: 2.8rem;
-  color: #38bdf8; /* Light blue for contrast */
-  text-shadow: 0 0 10px rgba(56,189,248,0.7), 0 0 30px rgba(56,189,248,0.4);
+  color: #38bdf8;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.7), 0 0 30px rgba(56, 189, 248, 0.4);
 }
 
 h2 {
   margin-bottom: 15px;
   color: #22d3ee;
-  position: relative;
   font-size: 2rem;
+  position: relative;
 }
 
-/* Glowing underline effect for headings */
+/* Glowing Underline for h2 */
 h2::after {
   content: "";
   display: block;
@@ -76,15 +70,9 @@ h2::after {
   margin-top: 8px;
   border-radius: 2px;
   box-shadow: 0 0 12px #38bdf8;
-  animation: glowGreen 1.5s infinite alternate;
 }
 
-@keyframes glowGreen {
-  0% { box-shadow: 0 0 5px #38bdf8, 0 0 15px #38bdf8; }
-  100% { box-shadow: 0 0 10px #38bdf8, 0 0 25px #38bdf8; }
-}
-
-/* ===== Fade-in Effect for Sections ===== */
+/* Section Styling */
 section {
   margin-bottom: 50px;
   padding: 30px;
@@ -92,45 +80,38 @@ section {
   border-radius: 18px;
   border: 1px solid rgba(56, 189, 248, 0.15);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(56, 189, 248, 0.05);
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.5s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-section.visible {
-  opacity: 1;
-  transform: translateY(0);
+/* Hover Effect for Sections */
+section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(56, 189, 248, 0.25), inset 0 0 30px rgba(56, 189, 248, 0.1);
 }
 
-/* ===== Project Cards ===== */
+/* Project Card Styling */
 .project {
   margin-bottom: 25px;
   padding: 20px;
   border-radius: 14px;
   background: linear-gradient(135deg, rgba(2, 6, 23, 0.9), rgba(15, 23, 42, 0.9));
   border-left: 4px solid #38bdf8;
-  transition: all 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-/* Hover effect for project cards */
+/* Hover Effect for Project Cards */
 .project:hover {
   border-left-color: #22d3ee;
   box-shadow: 0 0 25px rgba(34, 211, 238, 0.4);
   transform: translateY(-5px);
 }
 
-/* ===== Links ===== */
+/* Link Styling */
 a {
   color: #22d3ee;
   font-weight: 500;
   position: relative;
   text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-a:hover {
-  transform: scale(1.1);
-  color: #38bdf8; /* Light blue for hover effect */
 }
 
 a::after {
@@ -144,11 +125,32 @@ a::after {
   transition: width 0.3s ease;
 }
 
+/* Hover Effect for Links */
 a:hover::after {
   width: 100%;
 }
 
-/* ===== Footer ===== */
+/* List Styling */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding-left: 28px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+ul li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #38bdf8;
+  text-shadow: 0 0 8px #38bdf8;
+}
+
+/* Footer Styling */
 footer {
   text-align: center;
   font-size: 0.9em;
@@ -158,7 +160,7 @@ footer {
   border-top: 1px solid rgba(56, 189, 248, 0.2);
 }
 
-/* ===== Media Queries for Responsiveness ===== */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   body {
     padding: 15px;
@@ -204,25 +206,3 @@ footer {
     font-size: 0.8rem;
   }
 }
-
-/* ===== Parallax Scrolling Effect ===== */
-body {
-  background-attachment: fixed;
-}
-
-/* ===== JavaScript Helper for Fade-in Animation (intersection observer) ===== */
-document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('section');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1 });
-
-  sections.forEach(section => {
-    observer.observe(section);
-  });
-});
