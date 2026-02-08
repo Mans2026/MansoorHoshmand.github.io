@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mansoor Hoshmand | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -9,102 +10,133 @@
 
 <header>
   <h1>Mansoor Hoshmand</h1>
-  <p>Cybersecurity Student | Aspiring Security Analyst</p>
+  <p>Cybersecurity Diploma – Nova Scotia Community College</p>
 </header>
 
 <section>
-  <h2>About Me</h2>
+  <h2>What Is This Portfolio?</h2>
   <p>
-    I am a cybersecurity student with foundational knowledge in penetration testing,
-    network security, and incident response. My experience is built through hands-on
-    labs, real-world security simulations, and academic projects that emphasize practical
-    skills and clear security documentation. This portfolio showcases selected projects
-    that demonstrate my technical foundation and continued growth in cybersecurity.
+    This portfolio is a curated collection of academic, lab-based, and simulated cybersecurity work demonstrating a broad technical foundation in penetration testing, malware analysis, network security, and incident response. It is designed to provide clear, practical evidence of technical capability, analytical thinking, and professional documentation aligned with entry-level cybersecurity roles.
   </p>
+</section>
+
+<section>
+  <h2>Professional Summary</h2>
+  <p>
+    I am a graduating cybersecurity student with a broad technical foundation in network infrastructure security, threat detection, incident response, penetration testing, risk management, and programming and automation. My background is built through hands-on labs, security simulations, and academic projects that emphasize practical analysis, ethical security practices, and clear documentation. This foundation is complemented by hands-on industry experience in Help Desk support and cybersecurity awareness initiatives.
+  </p>
+</section>
+
+<section>
+  <h2>How This Portfolio Is Organized</h2>
+  <p>
+    This portfolio is structured to allow reviewers to quickly understand my skills, tools, and hands-on experience:
+  </p>
+  <ul>
+    <li>Core Cybersecurity Skills</li>
+    <li>Featured Cybersecurity Projects</li>
+    <li>Technical Tools & Technologies</li>
+    <li>Coursework & Academic Focus</li>
+    <li>Professional Practice & Ethics</li>
+    <li>Contact & Professional Links</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Core Cybersecurity Skills</h2>
+  <ul>
+    <li>Penetration Testing & Vulnerability Assessment</li>
+    <li>Malware Analysis (Static & Dynamic)</li>
+    <li>Post-Incident Analysis & Security Reporting</li>
+    <li>Network Security & Traffic Analysis</li>
+    <li>Web Application Security</li>
+    <li>Linux & Windows Systems Administration</li>
+    <li>Python, Bash, and PowerShell Scripting</li>
+    <li>Incident Response & Digital Forensics</li>
+  </ul>
 </section>
 
 <section>
   <h2>Featured Cybersecurity Projects</h2>
 
   <div class="project">
-    <h3>Penetration Testing Labs</h3>
+    <h3>Post-Incident Malware Analysis & Fileless Attack Simulation</h3>
     <p>
-      A collection of hands-on penetration testing exercises covering reconnaissance,
-      vulnerability discovery, exploitation techniques, and reporting.
+      Analyzed a malicious Windows Portable Executable (PE) using static and dynamic techniques to identify evasion methods, persistence mechanisms, and covert remote access behavior. Simulated a real-world fileless attack using PowerShell to establish an in-memory reverse shell, demonstrating modern attacker tradecraft and post-exploitation persistence.
     </p>
-    <p><strong>Tools:</strong> Nmap, Burp Suite, Metasploit, SQLmap</p>
-    <a href="https://github.com/Mans2026/penetration-testing-labs" target="_blank">
-      View Project Repository
-    </a>
+    <a href="#" target="_blank">📄 Post-Incident Malware Analysis & Fileless Attack Simulation.pdf</a>
   </div>
 
   <div class="project">
-    <h3>Web Application Security & Hardening</h3>
+    <h3>Multi-Stage Ransomware Attack Chain Simulation</h3>
     <p>
-      Practical labs focused on identifying and mitigating common web vulnerabilities
-      such as XSS, SQL Injection, and insecure authentication mechanisms.
+      Developed and executed a controlled malware simulation implementing a full modern ransomware attack chain in a lab environment. The malware disguised itself as a legitimate OBS Studio installer, performed privilege escalation, payload deployment, persistence mechanisms, and created a hidden administrative backdoor. The project concluded with automated ransom note delivery and self-deletion of the dropper to reduce forensic artifacts, demonstrating practical understanding of malware behavior, persistence, and evasion techniques.
     </p>
-    <p><strong>Tools:</strong> DVWA, Apache, MySQL, Burp Suite</p>
-    <a href="https://github.com/Mans2026/web-security-projects" target="_blank">
-      View Project Repository
-    </a>
+    <a href="#" target="_blank">📄 Multi-Stage Ransomware Attack Chain Simulation.pdf</a>
   </div>
 
   <div class="project">
-    <h3>Network Security & Segmentation</h3>
+    <h3>Web Application Penetration Testing – DVWA</h3>
     <p>
-      Designed and tested segmented network environments using VLANs, ACLs,
-      and firewall rules to restrict unauthorized lateral movement.
+      Conducted a hands-on penetration test against the Damn Vulnerable Web Application (DVWA), exploiting vulnerabilities such as command injection, insecure file uploads, SQL injection, and cross-site scripting (XSS). Demonstrated real-world impact through reverse shells, credential extraction, and session cookie exfiltration, highlighting practical offensive security skills and secure coding awareness.
     </p>
-    <p><strong>Tools:</strong> Cisco Packet Tracer, Wireshark</p>
-    <a href="https://github.com/Mans2026/network-security-labs" target="_blank">
-      View Project Repository
-    </a>
+    <a href="#" target="_blank">📄 Web Application Penetration Testing – DVWA.pdf</a>
   </div>
 
   <div class="project">
-    <h3>Covert Data Exfiltration (CovetTCP)</h3>
+    <h3>Enterprise Security Risk Assessment</h3>
     <p>
-      Demonstrated covert data exfiltration techniques by embedding information
-      within TCP headers between virtual machines.
+      Performed a comprehensive security assessment of enterprise workstations using both uncredentialed and credentialed vulnerability scans. Identified and analyzed critical and medium-risk exposures, providing actionable recommendations to harden configurations and reduce overall organizational risk.
     </p>
-    <p><strong>Tools:</strong> CovetTCP, Wireshark, Kali Linux</p>
-    <a href="https://github.com/Mans2026/covert-channels" target="_blank">
-      View Project Repository
-    </a>
-  </div>
-
-  <div class="project">
-    <h3>Honeypot & Honeynet (Capstone – In Progress)</h3>
-    <p>
-      Capstone project focused on deploying honeypots to observe attacker behavior
-      and collect threat intelligence in a controlled environment.
-    </p>
-    <p><strong>Tools:</strong> Linux, Logging & Monitoring Tools</p>
-    <a href="https://github.com/Mans2026/honeypot-honeynet" target="_blank">
-      View Project Repository
-    </a>
+    <a href="#" target="_blank">📄 Enterprise Security Risk Assessment.pdf</a>
   </div>
 
 </section>
 
 <section>
-  <h2>Skills Overview</h2>
+  <h2>Technical Tools & Technologies</h2>
   <ul>
-    <li>Penetration Testing & Vulnerability Assessment</li>
-    <li>Network Security & Traffic Analysis</li>
-    <li>Web Application Security</li>
-    <li>Linux & Windows Systems</li>
-    <li>Python & Bash Scripting</li>
-    <li>Incident Response & Digital Forensics (Foundational)</li>
+    <li>Operating Systems: Linux, Windows, Windows Server</li>
+    <li>Security Tools: Nmap, Burp Suite, Metasploit, Wireshark, Autopsy</li>
+    <li>Scripting & Automation: Python, Bash, PowerShell</li>
+    <li>Networking: TCP/IP, VLANs, Firewalls, VPNs, Wireless Security</li>
+    <li>Databases: MySQL, SQL</li>
   </ul>
 </section>
 
 <section>
-  <h2>Contact</h2>
-  <p>Email: your@email.com</p>
-  <p>GitHub: <a href="https://github.com/Mans2026" target="_blank">github.com/Mans2026</a></p>
-  <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/yourname</a></p>
+  <h2>Coursework & Academic Focus</h2>
+  <p>Relevant coursework supporting this portfolio includes:</p>
+  <ul>
+    <li>Network Security</li>
+    <li>Cyber Crime</li>
+    <li>Data Security (Databases & SQL)</li>
+    <li>Operating Systems (Windows & Linux)</li>
+    <li>Vulnerabilities & Exploits</li>
+    <li>Web Security</li>
+    <li>Wireless & Mobile Security</li>
+    <li>Security Audits & Risk Assessments</li>
+    <li>Digital Forensics</li>
+    <li>Incident Response</li>
+    <li>Penetration Testing</li>
+  </ul>
+  <a href="#">Want to see selected coursework? Click here.</a>
+</section>
+
+<section>
+  <h2>Professional Practice & Ethics</h2>
+  <p>
+    All projects included in this portfolio were conducted in controlled lab environments for educational purposes only. This work adheres to ethical cybersecurity practices, legal guidelines, and academic integrity standards.
+  </p>
+</section>
+
+<section>
+  <h2>Contact & Professional Links</h2>
+  <ul>
+    <li><strong>GitHub:</strong> <a href="https://github.com/Mans2026" target="_blank">github.com/Mans2026</a></li>
+    <li><strong>Email:</strong> <a href="mailto:mansoorhoshmand12@gmail.com">mansoorhoshmand12@gmail.com</a></li>
+    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mansoor-hoshmand-a56b6822a" target="_blank">linkedin.com/in/mansoor-hoshmand-a56b6822a</a></li>
+  </ul>
 </section>
 
 <footer>
@@ -113,3 +145,4 @@
 
 </body>
 </html>
+
